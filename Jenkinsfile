@@ -12,19 +12,19 @@ pipeline {
       defaultValue: 'openstack-pangyo',
       description: 'The name of provider defined in clouds.yaml file.')
     string(name: 'TACOPLAY_TAG',
-      defaultValue: 'main',
+      defaultValue: 'release-v21.06',
       description: 'tacoplay repository tag or branch')
      string(name: 'GATING_INVENTORIES_TAG',
-      defaultValue: 'main',
+      defaultValue: 'release-v21.06',
       description: 'gating inventories repository tag or branch')
     string(name: 'SITE',
       defaultValue: 'gate-centos-lb-ceph-online-aio',
       description: 'target site(inventory) to deploy taco')
     string(name: 'DECAPOD_VERSION',
-      defaultValue: 'main',
+      defaultValue: 'release-v21.06',
       description: 'Decapod version: main or release-1.0')
     string(name: 'K8S_VERSION',
-      defaultValue: 'v1.18.8',
+      defaultValue: 'v1.19.9',
       description: 'Kubernetes version to deploy. This will be ignored when offline deployment.')
     string(name: 'SONOBUOY_MODE',
       defaultValue: 'quick',
